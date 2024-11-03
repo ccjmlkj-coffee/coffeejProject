@@ -13,6 +13,15 @@ public interface CoffeeIterable<T> {
     Iterator<T> iterator();
 
 
+//    @SuppressWarnings("unchecked")
+//    default void foreach(Consumer<T> consumer){
+//        Objects.requireNonNull(consumer);
+//        for (T t: this){
+//            consumer.accept(t);
+//        }
+//    }
+
+
 
 
 

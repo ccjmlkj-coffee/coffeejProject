@@ -1,14 +1,12 @@
 package com.coffee;
 
 
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class CurlJavaExample {
+public class CurlJavaExample implements Closeable {
         public static void main(String[] args) {
             try {
                 // 请求URL
@@ -54,5 +52,10 @@ public class CurlJavaExample {
                 e.printStackTrace();
             }
         }
+
+    @Override
+    public void close() throws IOException {
+
     }
+}
 
